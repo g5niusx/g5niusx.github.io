@@ -1,0 +1,45 @@
+# Permalinks
+permalink:        /post/:title.html
+
+# Setup
+url:              //g5niusx.github.io
+img_url:          //infp.github.io/images
+
+# Set to '' in case of hosting on `https://<your-github-name>.github.io`
+baseurl:          ''
+
+title:            'g5niusx的小黑屋'
+
+# Markdown enabled, however don't use more than one paragraph (enforced by `>`)
+description:      >
+  关于[代码](/code)、[宇宙](/read)和[一切](/)。
+
+
+# Google Analytics tracking ID
+analytics:        'UA-32028925-2'
+
+# Fallback image and color if not overwritten for tag or post
+image:            /public/images/mountains.jpg
+color:            '#dc322f'
+
+author:
+  name:           'g5niusx'
+  email:          g5niusx@gmail.com
+  github:         g5niusx
+  photo:          /public/images/cat.jpg
+
+
+  # Markdown enabled, can use multiple paragraphs (enabled by `|`)
+  about:          |
+    g5niusx
+
+
+compress_html:
+  clippings:      all
+  comments:       ["<!--", "-->"]
+  endings:        all
+  startings:      [html, head, body]
+
+sass:
+  sass_dir:       /public/css
+  style:          compressed

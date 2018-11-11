@@ -1,0 +1,24 @@
+# Add an entry, where the key represents a slug.
+# Provide at least a `name` value and optionally `image`, `color` and `description`.
+# Markdown is enabled for `description`, however don't use more than one paragraph (enforced by `>`)
+#
+# Example:
+#
+# ~~~
+# mytag:
+#   name: My Tag
+#   description: >
+#     *My Tag* is an example of how to define a custom tag.
+# ~~~
+
+code:
+  name: 代码
+  image: /public/images/mountains.jpg
+  description: >
+    像建筑师、作曲家和画家一样，黑客们也在进行着富有创造性和挑战性的工作：他们将代码构筑成如今的互联网和计算机的世界。
+
+read:
+  name: 读书
+  image: /public/images/sierra.jpg
+  description: >
+    安居不用架高堂，书中自有黄金屋。
