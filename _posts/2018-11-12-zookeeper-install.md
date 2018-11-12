@@ -3,7 +3,7 @@ layout: post
 title: 'Zookeeper 安装'
 tags: [code]
 ---
-> 参加了[biezhi](https://blog.biezhi.me/)大佬组织的`20DaysOfCode`,需要在第一个阶段写出一个简单的RPC轮子,因为之前没有接触过RPC项目，所以先安装一个zookeeper体验一下
+> 参加了<a href="https://blog.biezhi.me/" target="_blank">biezhi</a>大佬组织的`20DaysOfCode`,需要在第一个阶段写出一个简单的RPC轮子,因为之前没有接触过RPC项目，所以先安装一个zookeeper体验一下
 ### 下载
 > 去[官网](https://www.apache.org/dyn/closer.cgi/zookeeper/)下载安装包我下载的是`http://mirrors.hust.edu.cn/apache/zookeeper/zookeeper-3.4.13/zookeeper-3.4.13.tar.gz`
 ```
