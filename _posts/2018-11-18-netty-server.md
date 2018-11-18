@@ -12,6 +12,7 @@ Netty是一个开源的网络编程框架，netty封装了java的nio，简化了
 
 #### 创建服务端
 - 启动类
+
 ```java
 package com.java.netty.simple.demo;
 
@@ -56,6 +57,7 @@ public class SimpleServer {
 }
 ```
 - 服务端处理类
+
 ```java
 package com.java.netty.simple.demo;
 
@@ -86,7 +88,7 @@ public class SimpleServerHandler extends SimpleChannelInboundHandler {
 ![telnet测试]({{ "/public/images/netty/2018-11-14-netty-server-2.png"}} "telnet测试")
 ![服务器结果]({{ "/public/images/netty/2018-11-14-netty-server-3.png"}} "服务器结果")
 
-可以看到，服务端已经接收到了我们输入的内容。这就是使用netty创建的一个最简单的服务端,只需要几行代码就可以实现网络编程的基础功能。
+可以看到，服务端已经接收到了我们输入的内容。这就是使用netty创建的一个最简单的服务端,只需要十几行代码就可以实现网络编程的基础功能。
 
 源码地址: [netty-demo](https://github.com/g5niusx/netty-demo/tree/master/src/main/java/com/java/netty/simple/demo)
 
