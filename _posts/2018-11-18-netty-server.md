@@ -1,6 +1,6 @@
 ---
 layout: post
-title: 'Netty 初步使用'
+title: 'Netty 服务端初步使用'
 tags: [code]
 ---
 
@@ -82,9 +82,9 @@ public class SimpleServerHandler extends SimpleChannelInboundHandler {
 - 测试服务是否正常
 使用`telnet`命令可以测试一个端口是否有应用活动，运行`main`方法，结果如下
 
-![服务端启动截图](https://github.com/g5niusx/g5niusx.github.io/blob/master/public/images/2018-11-14-netty-server-1.png)
-![服务端启动截图](https://github.com/g5niusx/g5niusx.github.io/blob/master/public/images/2018-11-14-netty-server-2.png)
-![服务端启动截图](https://github.com/g5niusx/g5niusx.github.io/blob/master/public/images/2018-11-14-netty-server-3.png)
+![应用启动]({{ "/public/images/netty/2018-11-14-netty-server-1.png"}} "应用启动")
+![telnet测试]({{ "/public/images/netty/2018-11-14-netty-server-2.png"}} "telnet测试")
+![服务器结果]({{ "/public/images/netty/2018-11-14-netty-server-3.png"}} "服务器结果")
 
 可以看到，服务端已经接收到了我们输入的内容。这就是使用netty创建的一个最简单的服务端,只需要几行代码就可以实现网络编程的基础功能。
 
