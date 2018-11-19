@@ -19,7 +19,7 @@
 /* Icon font for github, twitter, etc */
 @font-face {
   font-family: 'icomoon';
-  src: url('https://g5niusx.github.io/public/fonts/icomoon.ttf') format('truetype');
+  src: url('https://www.g5niusx.com/public/fonts/icomoon.ttf') format('truetype');
   font-weight: normal;
   font-style: normal;
 }
@@ -56,7 +56,7 @@
 }
 
 /* Use larg desktop styles for mobile as well when the JS "drawer" is active */
-.drawer>.sidebar {
+.drawer > .sidebar {
   position: fixed;
   bottom: 0;
   top: 0;
@@ -66,13 +66,13 @@
   box-shadow: 0.25rem 0 0.3rem rgba(0, 0, 0, 0.15)
 }
 
-.drawer>.sidebar::before {
+.drawer > .sidebar::before {
   background: -moz-linear-gradient(bottom, rgba(32, 32, 32, 0) 0%, rgba(32, 32, 32, .5) 100%);
   background: -webkit-linear-gradient(bottom, rgba(32, 32, 32, 0) 0%, rgba(32, 32, 32, .5) 100%);
   background: linear-gradient(to bottom, rgba(32, 32, 32, 0) 0%, rgba(32, 32, 32, .5) 100%);
 }
 
-.drawer>.sidebar>.sidebar-sticky {
+.drawer > .sidebar > .sidebar-sticky {
   position: absolute;
   right: 1rem;
   bottom: 1rem;
@@ -83,7 +83,7 @@
   display: none;
 }
 
-.drawer>#_backdrop {
+.drawer > #_backdrop {
   display: block;
   position: fixed;
   top: 0;
@@ -101,10 +101,9 @@
   overflow: hidden;
 }
 
-.drawer-open>#_backdrop {
+.drawer-open > #_backdrop {
   pointer-events: all;
 }
-
 
 #_menu {
   display: block;
@@ -116,7 +115,7 @@
 }
 
 @media (min-width: 900px) {
-  .drawer>#_menu {
+  .drawer > #_menu {
     display: none;
   }
 
@@ -149,7 +148,7 @@
 }*/
 
 /* About section */
-.sidebar-about>h1 {
+.sidebar-about > h1 {
   color: #fff;
   margin-top: 0;
   font-size: 2rem;
@@ -205,17 +204,17 @@
   margin-bottom: 1.25rem;
 }
 
-.sidebar-social>a {
+.sidebar-social > a {
   font-size: 1.4rem;
   line-height: 1.4rem;
   margin-right: 1rem;
 }
 
-.sidebar-social>a:last-child {
+.sidebar-social > a:last-child {
   margin-right: 0;
 }
 
-.sidebar-social>a:hover {
+.sidebar-social > a:hover {
   text-decoration: none;
 }
 
@@ -259,7 +258,6 @@
   // border-left: 0.3rem solid #fff;
 }
 
-
 @media (min-width: 900px) {
   .content {
     max-width: 50rem;
@@ -297,7 +295,6 @@
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
-
 
 .icon.icon-calendar::before {
   content: "\e953";
@@ -408,11 +405,11 @@
   text-decoration: none;
 }
 
-.paginator>.previous.disabled {
+.paginator > .previous.disabled {
   color: #999;
 }
 
-.paginator>.next.disabled {
+.paginator > .next.disabled {
   color: #999;
 }
 
@@ -528,7 +525,6 @@
 .theme-base-08 .content .vglnk {
   color: #f05f70;
 }
-
 
 /* Orange */
 .theme-base-09 .sidebar {
