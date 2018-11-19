@@ -2,7 +2,7 @@
 layout: page
 title: 友链
 permalink: links.html
-image: /public/images/sierra.jpeg
+image: /public/images/sierra.jpg
 order: 4
 ---
 
