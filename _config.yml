@@ -21,7 +21,7 @@ paginate_path: "/page/:num"
 author:
   name: g5niusx
   email: g5niusx@gmail.com
-  photo: /public/images/logo.jpeg
+  photo: /public/images/logo.jpg
 
 # 社交信息
 socials:
