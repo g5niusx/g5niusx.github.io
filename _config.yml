@@ -1,48 +1,74 @@
-# Permalinks
-permalink:        /post/:title.html
+title: g5niusx的小黑屋
+url: https://www.g5niusx.com
+baseurl: ''
+# cdnurl: ''
+description: >
+  关于编程
 
-# Setup
-url:              //g5niusx.github.io
-img_url:          //infp.github.io/images
+permalink: /:year/:month/:title.html
 
-# Set to '' in case of hosting on `https://<your-github-name>.github.io`
-baseurl:          ''
+image: /public/images/mountains.jpg
+color: '#dc322f'
+google_analytics:
+baidu_analytics: 2209f3e596f3e0c61a293f49a2f65ba3
+disqus: blog-biezhi-me
 
-title:            'g5niusx的小黑屋'
+markdown: kramdown
+highlighter: rouge
+paginate: 12
+paginate_path: "/page/:num"
 
-# Markdown enabled, however don't use more than one paragraph (enforced by `>`)
-description:      >
-  关于[代码](/code)、[酒](/drink)和[一切](/)。
-
-
-# Google Analytics tracking ID
-analytics:        'UA-32028925-2'
-
-# Fallback image and color if not overwritten for tag or post
-image:            /public/images/mountains.jpg
-color:            '#dc322f'
-
+# 作者信息
 author:
-  name:           'g5niusx'
-  email:          g5niusx@gmail.com
-  github:         g5niusx
-  photo:          /public/images/logo.jpg
+  name: g5niusx
+  email: g5niusx@gmail.com
+  photo: /public/images/logo.jpeg
+
+# 社交信息
+socials:
+- title: Github
+  icon: github
+  url: https://github.com/g5niusx
 
 
-  # Markdown enabled, can use multiple paragraphs (enabled by `|`)
-  about:          |
-    g5niusx
+# 友链
+links:
+- title: biezhi
+  url: https://blog.biezhi.me/
+- title: Data羊
+  url: http://www.datayang.com/
+- title: dip
+  url: https://i.charelyz.cn
+- title: 老实孩
+  url: https://blog.whq6.top/
+- title: 滴石
+  url: https://www.jianshu.com/u/2ab96456bfc3
+- title: 绿谷
+  url: https://github.com/xiwenAndlejian/my-blog/issues
+- title: Aiopr
+  url: https://www.cnblogs.com/BBchao/
+- title: 老框
+  url: https://github.com/dogkuangQAQ/20dayscode
+- title: os7blue
+  url: https://blog.os7blue.com
+- title: 荔枝
+  url: blog.yizhilee.com
+- title: 看着黎明、庆幸
+  url: blog.liantao.me
+- title: 萌新
+  url: qqtim.club
 
-
+# html 压缩
 compress_html:
-  clippings:      all
-  comments:       ["<!--", "-->"]
-  endings:        all
-  startings:      [html, head, body]
+  clippings: all
+  comments: ["<!--", "-->"]
+  endings: all
+  startings: [html, head, body]
 
+# sass 解析
 sass:
-  sass_dir:       /public/css
-  style:          compressed
+  sass_dir: public/css
+  style: compressed
 
 # 插件
 plugins:

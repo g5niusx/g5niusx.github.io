@@ -1,34 +1,17 @@
 ---
 layout: page
-title: "关于"
+title: 关于
 permalink: about.html
-image: /public/images/about.jpg
-color: '#f44336'
-order: 7
+image: /public/images/sierra.jpg
+order: 5
 ---
 
-
-{% comment %}
-  This inserts the "about" photo and text from `_config.yml`.
-  You can edit it there (jekyll needs restart!) or remove it and provide your own photo/text.
-  Don't forget to add the `me` class to the photo, like this: `![alt](src){:.me}`.
-{% endcomment %}
-
 {% if site.author.photo %}
-  ![{{site.author.name}}]({{site.author.photo}}){:.me}
+![{{ site.author.name }}]({{ site.author.photo | prepend: site.cdnurl }}){:.me}
 {% endif %}
 
+略略略略略略略略....
+## 编程理念
 
-g5niusx的blog
+略略略略略略略略....
 
-## 更加了解我
-
-略略略...
-
-## 为什么要写这个博客？
-
-略略略...
-
-## 联系我
-
-略略略...

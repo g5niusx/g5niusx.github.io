@@ -5,19 +5,20 @@ layout: compress
 <!DOCTYPE html>
 <html lang="zh-hans">
 
-  {% include head.html %}
+{% include head.html %}
 
-  <body>
+<body class="theme-base-08">
 
-    <main class="content container">
-      {{content}}
-    </main>
+  <main class="content container">
+    {{content}}
+  </main>
 
-    {% include sidebar.html %}
+  {% include sidebar.html %}
 
-    <script src="{{site.baseurl}}/public/js/drawer.min.js"></script>
+  <script src="{{ '/public/js/drawer.min.js' | prepend: site.cdnurl }}"></script>
 
-    {% include jsblock.html %}
+  {% include jsblock.html %}
 
-  </body>
+</body>
+
 </html>
