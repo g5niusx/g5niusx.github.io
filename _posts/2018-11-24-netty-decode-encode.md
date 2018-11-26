@@ -50,10 +50,17 @@ ch.pipeline().addLast(new DelimiterBasedFrameDecoder(1024, byteBuf));
 ch.pipeline().addLast(new SimpleServerHandler());
 ```
 ![使用解码器]({{"/public/images/netty/2018-11-24-netty-piple-3.png"}} "使用解码器")
-
+源码地址: [netty-demo](https://github.com/g5niusx/netty-demo/tree/master/src/main/java/com/java/netty/delimiter)
 ### FixedLengthFrameDecoder
-`FixedLengthFrameDecoder`定长解码器，也是可以解决拆包和沾包的。主要是通过消息定长来解决网络传输的拆包和粘包问题。比如和服务端约定，消息定长为2048
+`FixedLengthFrameDecoder`定长解码器，也是可以解决拆包和沾包的。主要是通过消息定长来解决网络传输的拆包和粘包问题。比如和服务端约定，消息定长为1024
 这种解码器就适用于这种场景
-源码地址: [netty-demo](https://github.com/g5niusx/netty-demo/tree/netty-demo-code)
+**使用定长解码器的时候，一定要注意发送消息的长度，如果长度不够服务端是无法接受到任何消息的**
+
+```java
+ch.pipeline().addLast(new FixedLengthFrameDecoder(1024));
+ch.pipeline().addLast(new SimpleClientHandler());
+```
+
+源码地址: [netty-demo](https://github.com/g5niusx/netty-demo/tree/master/src/main/java/com/java/netty/fixed)
 
 
