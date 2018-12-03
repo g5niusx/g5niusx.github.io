@@ -101,4 +101,28 @@ tags: [code]
 
 常用的文件策略有 `TimeBasedRollingPolicy`按照时间保留,`FixedWindowRollingPolicy`按照文件大小保留,`SizeAndTimeBasedRollingPolicy`按照时间和文件大小保留等。
 
+- 按照包名输出
+
+logback支持不同不包名或者类名下生成不同的日志格式和不同的策略,只需要在logback.xml中增加`logger`标签，将name属性写成包名，引用需要输出的appender就可以完成不同包名的输出
+下面的配置设置`com.g5niusx.log.sync`中输出的日志级别为`debug`,设置了`additivity="false"`表示日志不想上传递只会打印一次。`appender-ref`决定了这个包下面的日志输出的格式以及策略
+
+```xml
+<logger name="com.g5niusx.log.sync" level="DEBUG" additivity="false">
+        <appender-ref ref="SYNC_FILE_APPENDER"/>
+</logger>
+```
+
+最终的运行结果如下，生成了压缩文件，没有配置文件输出的包将日志输出到了控制台，并没有写入到文件中。
+
+![最终结果]({{"/public/images/logback/2018-12-2-logback-result.png"}} "最终结果")
+
+
+- 总结
+logback的核心主要是`appender`和`logger`,appender相当于是一个可以重复使用的组件，同时这个组件是可以个性化配置的，我们可以在
+appender里面决定内容输出到控制台还是文件，输出内容的格式以及文件的保留策略等。logger具体指定了使用哪一种appender。
+
+[源码地址](https://github.com/g5niusx/logback-demo)
+
+
+
 
