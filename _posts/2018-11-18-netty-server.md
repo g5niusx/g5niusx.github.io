@@ -90,6 +90,6 @@ public class SimpleServerHandler extends SimpleChannelInboundHandler {
 
 可以看到，服务端已经接收到了我们输入的内容。这就是使用netty创建的一个最简单的服务端,只需要十几行代码就可以实现网络编程的基础功能。
 
-源码地址: [netty-demo](https://github.com/g5niusx/netty-demo/tree/master/src/main/java/com/java/netty/simple/demo)
+源码地址: [netty-demo](https://github.com/g5niusx/netty-demo/tree/master/src/main/java/com/java/netty/simple)
 
 

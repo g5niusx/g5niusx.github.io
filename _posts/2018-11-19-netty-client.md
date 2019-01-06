@@ -95,6 +95,6 @@ public class SimpleClientHandler extends SimpleChannelInboundHandler<ByteBuf> {
 通过上面的代码可以看到，使用netty就可以轻松的完成socket的基础编程,而且netty对于socket的封装很完善，让我们可以非常简便的使用它的api
 
 
-源码地址: [netty-demo](https://github.com/g5niusx/netty-demo/tree/master/src/main/java/com/java/netty/simple/demo)
+源码地址: [netty-demo](https://github.com/g5niusx/netty-demo/tree/master/src/main/java/com/java/netty/simple)
 
 
