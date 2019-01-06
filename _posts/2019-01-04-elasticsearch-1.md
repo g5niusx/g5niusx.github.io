@@ -1,6 +1,6 @@
 ---
 layout: post
-title: 'Elasticsearch 系列-- (一)安装 Elasticsearch'
+title: 'Elasticsearch 系列 ———— (一)安装 Elasticsearch'
 tags: [elasticsearch]
 ---
 
