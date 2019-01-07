@@ -16,11 +16,34 @@ Elasticsearch(ES)是一个个高效的全文检索引擎，可以帮我们完成
 
 ![安装页面]({{"/public/images/elasticsearch/es-01.png"}} "安装页面")
 
-## 和 Elasticsearch 交互
+## Elasticsearch 配置
 
-Elasticsearch 支持 RESTful API 的交互，通过传输json数据可以完成对数据的搜索,后续也是通过 api 来充当客户端对 Elasticsearch 做增删改查。
+- 应用配置
+Elasticsearch 默认是不需要配置的，如果想对当前 Elasticsearch 的名称自定义或者日志输出路径自定义，可以修改 `config/elasticsearch.yml` 文件
 
-比如 `http://localhost:9200/_count?pretty` 这个http请求是获取了本地 Elasticsearch 的文档数量，后面的参数`pretty`代表返回的json数据是否格式化
+```yaml
+# 集群名称
+cluster.name: cluster
+# 当前节点名称
+node.name: node-1
+# 数据存储路径
+path.data: /path/to/data
+# 日志存储路径
+path.logs: /path/to/logs
+# 主机地址，默认为localhost,在集群的情况下需要修改
+network.host: 192.168.0.1
+# 发现指定的节点,如果没有指定端口，则会使用[transport.profiles.default.port]或者[transport.tcp.port]的端口
+discovery.zen.ping.unicast.hosts:
+    - 192.168.1.10:9300
+    - 192.168.1.9:9301
+# 设置最大节点数,计算公式为 (nodeCount/2)+1，所有的节点数量除以二再加1
+discovery.zen.minimum_master_nodes: 2
+
+```
+- jvm 配置
+
+可以修改 `config/jvm.options`，一般不需要配置
+
 
 
 

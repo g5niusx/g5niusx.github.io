@@ -5,7 +5,11 @@ tags: [code]
 ---
 
 ### 什么是Netty
-Netty是一个开源的网络编程框架，netty封装了java的nio，简化了java网络编程。[netty官网](https://netty.io/)。可以让开发者快速的上手网络编程
+[Netty](https://netty.io/) 是一个开源的网络编程框架，Netty 封装了 Java 的 NIO 和 OIO，简化了java网络编程。可以让开发者快速的上手网络编程
+由于 NIO 使用 Reactor 模式来设计，可以高效的处理网络请求。而 Netty 是对 NIO 的进一步封装和简化，所以 Netty 也是 Reactor 模式。
+
+> Reactor 是一种广泛应用在服务器端开发的设计模式。是为了节省 CPU 的性能，不让 CPU 因为读取网络 IO 里面的数据而阻塞。一般的实现方式是注册一个回调
+的实例(Handler)，然后由一个单独的线程不断的去检查 IO 操作是否就，如果就绪之后就会通知对应的 Handler 来处理。
 
 ### 最简单的一个例子
 `本例子中会使用netty实现可以接收请求并且响应消息的服务端`
