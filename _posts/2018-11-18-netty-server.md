@@ -1,7 +1,7 @@
 ---
 layout: post
 title: 'Netty 服务端初步使用'
-tags: [code]
+tags: [netty]
 ---
 
 ### 什么是Netty

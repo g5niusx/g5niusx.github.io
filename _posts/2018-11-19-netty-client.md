@@ -1,7 +1,7 @@
 ---
 layout: post
 title: 'Netty 客户端初步使用'
-tags: [code]
+tags: [netty]
 ---
 
 ### Netty客户端实现

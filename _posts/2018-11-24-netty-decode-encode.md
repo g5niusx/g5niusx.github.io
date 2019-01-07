@@ -1,7 +1,7 @@
 ---
 layout: post
 title: 'Netty 编码和解码'
-tags: [code]
+tags: [netty]
 ---
 
 ### Netty管道的处理流程
