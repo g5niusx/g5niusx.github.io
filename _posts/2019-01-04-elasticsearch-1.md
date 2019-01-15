@@ -5,7 +5,7 @@ tags: [elasticsearch]
 ---
 
 ## Elasticsearch 是什么?
-Elasticsearch(ES)是一个个高效的全文检索引擎，可以帮我们完成全文搜索功能。同时它还是一个文档型的分布式数据库，毕竟存储了数据才能进行搜索。
+Elasticsearch(ES) 是一个高效的全文检索引擎，可以帮我们完成全文搜索功能。同时它还是一个文档型的分布式数据库，毕竟存储了数据才能进行搜索。
 
 ## 安装 Elasticsearch
 
