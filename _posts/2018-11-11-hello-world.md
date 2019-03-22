@@ -26,3 +26,5 @@ func main(){
 
 ```
 
+![应用启动]({{ "/public/images/test.gif"}} "应用启动")
+
