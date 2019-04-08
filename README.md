@@ -23,3 +23,5 @@
 **[从零 Redis 系列 -- 安装与运行](https://www.g5niusx.com/2019/04/redis-1.html)**
 
 **[从零 Redis 系列 -- 常用命令](https://www.g5niusx.com/2019/04/redis-2.html)**
+
+**[从零 Redis 系列 -- 持久化数据](https://www.g5niusx.com/2019/04/redis-3.html)**
