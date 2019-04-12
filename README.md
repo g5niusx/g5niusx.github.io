@@ -26,4 +26,4 @@
 
 **[从零 Redis 系列 -- 持久化数据](https://www.g5niusx.com/2019/04/redis-3.html)**
 
-**[从零 Redis 系列 -- 集群配置](https://www.g5niusx.com/2019/04/redis-4.html)**
+**[从零 Redis 系列 -- docker compose 集群配置](https://www.g5niusx.com/2019/04/redis-4.html)**
