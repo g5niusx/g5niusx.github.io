@@ -25,37 +25,37 @@ author:
 
 # 社交信息
 socials:
-- title: Github
-  icon: github
-  url: https://github.com/g5niusx
+  - title: Github
+    icon: github
+    url: https://github.com/g5niusx
 
 
 # 友链
 links:
-- title: biezhi
-  url: https://blog.biezhi.me/
-- title: Data羊
-  url: http://www.datayang.com/
-- title: dip
-  url: https://i.charelyz.cn
-- title: 老实孩
-  url: https://blog.whq6.top/
-- title: 滴石
-  url: https://www.jianshu.com/u/2ab96456bfc3
-- title: 绿谷
-  url: https://github.com/xiwenAndlejian/my-blog/issues
-- title: Aiopr
-  url: https://www.cnblogs.com/BBchao/
-- title: os7blue
-  url: https://blog.os7blue.com
-- title: 荔枝
-  url: blog.yizhilee.com
-- title: 看着黎明、庆幸
-  url: blog.liantao.me
-- title: 萌新
-  url: qqtim.club
-- title: 狗框
-  url: http://dogkuang.site/
+  - title: biezhi
+    url: https://blog.biezhi.me/
+  - title: Data羊
+    url: http://www.datayang.com/
+  - title: dip
+    url: https://i.charelyz.cn
+  - title: 老实孩
+    url: https://blog.whq6.top/
+  - title: 滴石
+    url: https://www.jianshu.com/u/2ab96456bfc3
+  - title: 绿谷
+    url: https://github.com/xiwenAndlejian/my-blog/issues
+  - title: Aiopr
+    url: https://www.cnblogs.com/BBchao/
+  - title: os7blue
+    url: https://blog.os7blue.com
+  - title: 荔枝
+    url: blog.yizhilee.com
+  - title: 看着黎明、庆幸
+    url: blog.liantao.me
+  - title: 萌新
+    url: qqtim.club
+  - title: 狗框
+    url: http://dogkuang.site/
 
 # html 压缩
 compress_html:
@@ -71,8 +71,8 @@ sass:
 
 # 插件
 plugins:
-- jekyll-paginate
-- jekyll-feed
-- jekyll-seo-tag
-- jekyll-sitemap
+  - jekyll-paginate
+  - jekyll-feed
+  - jekyll-seo-tag
+  - jekyll-sitemap
 theme: jekyll-theme-cayman
