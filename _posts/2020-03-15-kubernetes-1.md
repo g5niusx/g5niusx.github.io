@@ -6,7 +6,7 @@ tags: [code]
 
 ## 创建一个 go mod 工程
 初始的目录如下,**其中 hack 目录复制自k8s的官方[demo](https://github.com/kubernetes/sample-controller/tree/master/hack)**
-创建的工程需要放在 '$GOPATH/src' 下面，否则生成的代码会在当前用户的根目录下
+创建的工程需要放在 `$GOPATH/src` 下面，否则生成的代码会在当前用户的根目录下
 ```text
 .
 ├── go.mod
