@@ -205,7 +205,9 @@ bash "${CODEGEN_PKG}"/generate-groups.sh "deepcopy,client,informer,lister" \
 # To use your own boilerplate text append:
 #   --go-header-file "${SCRIPT_ROOT}"/hack/custom-boilerplate.go.txt
 ```
+
 - 在工程的根目录下运行 `./hack/update-codegen.sh`,**一定要在工程的根目录下执行，否则会提示没有文件或者目录**
+
 ```text
    ./hack/update-codegen.sh
 脚本目录:./hack/..
